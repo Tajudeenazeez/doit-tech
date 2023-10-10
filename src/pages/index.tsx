@@ -7,7 +7,7 @@ import Welcome from '@/components/welcome/Welcome'
 export default function Home() {
   return (
     <>
-      <main className='bg-red-100 text-3xl text-gray-600 h-[75vh] relative'>
+      <main className='bg-[#f5f5f5] text-3xl text-gray-600 h-[75vh] relative'>
         <Welcome/>
       </main>
       <Services/>

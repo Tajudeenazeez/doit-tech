@@ -6,20 +6,20 @@ import {BsTelephoneFill} from "react-icons/bs"
 const Footer = () => {
   return (
     <>
-     <div className='grid grid-cols-2  lg:grid-cols-3 items-center justify-between px-8 h-full bg-[#00283a] text-[#314e5c] text-xl'>
-        <div className=''>
+     <div className='grid grid-cols-2  lg:grid-cols-3 items-center justify-between px-8 h-[30vh] bg-[#00283a] text-[#314e5c] text-xl'>
+        <div className='py-4'>
          <div>&copy;2023</div>
          <div className='w-1/2 '>DOIT-Tech Global services: All Right Reserved</div>
         </div>
         <div>
-         <div>Developer</div>
+         <div className='py-4'>Developer</div>
         <div>Tako-Tech</div>
         </div>
         <div>
             <div>
                 <h3 className='font-bold'>Support</h3>
                 <address className='flex flex-col'>
-                   <div className='flex'>
+                   <div className='flex py-4'>
                     <AiOutlineMail/> 
                        <a href="mailto:azeezproto@gmail.com?subject=Mail from our website">Send email</a>
                    </div>

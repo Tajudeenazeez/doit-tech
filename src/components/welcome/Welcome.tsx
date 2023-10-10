@@ -1,33 +1,50 @@
 import React from 'react'
-import { FaGreaterThan, FaLessThan} from "react-icons/fa"
-
+import PhoneAnime from '../anime/PhoneAnime'
+import SmsAnime from '../anime/SmsAnuime'
+import WomanAnime from '../anime/WomanAnime'
+import Hand from "../anime/Hand"
 
 const Welcome:React.FC = () => {
   return (
     <>
-        <div className='text-white'>
-            <div className='hidden lg:block bg-[#00283a] w-8 h-24 md:absolute top-[25%] p-px left-8'><FaLessThan className='pt-2 align-center pl-2' size={20}/></div>
-            <div className='hidden lg:block bg-[#00283a] w-8 h-24 md:absolute top-[25%] p-px left-[4.4rem]'><FaGreaterThan className='pt-2 pl-2' size={20}/></div>
+  <div className=" overflow-x-hidden ">
+    <div className="py-12 text-[#00283a] animate-marquee whitespace-nowrap ">
+	    <span className="text-xl uppercase p-2 mx-4 bg-white">Buy Data subscription</span>
+	    <span className="text-xl uppercase p-2 mx-4 bg-white">Buy cable subscription</span>
+	    <span className="text-xl uppercase p-2 mx-4 bg-white">Buy Airtime</span>
+	    <span className="text-xl uppercase p-2 mx-4 bg-white">Buy electricity</span>
+	    <span className="text-xl uppercase p-2 mx-4 bg-white">Buy exam pin </span>
+	    <span className="text-xl uppercase p-2 mx-4 bg-white">Buy bulk sms </span>
+    </div>
+    
+</div>
+      <div className='h-full'>
+     
+     <div className=' hidden lg:flex flex-col justify-end sm:w-[80%] lg:w-1/3  absolute top-[30%] left-20'>
+        <img className='text-white w-2/3 '  src="/cartton.png" alt="cartoon man"/>
+      </div> 
+      <div>
+        <h2 className='block  items-center absolute top-[30%] w-1/3 left-[30%] text-xl lg:text-6xl text-slate-800 uppercase'><span className='font-bold text-2xl lg:text-8xl'>doit-tech</span> gives you all the data to do it well</h2>
+      </div>
+     <div className='hidden lg:block relative w-full mt-10 h-[400px] '>
+           <div className='absolute top-[-15%] left-[8%]  '>
+        <WomanAnime/>
         </div>
-        <div className='hidden lg:flex flex-col sm:w-[80%] lg:w-1/3 absolute top-[30%] left-8'>
-            <div className='text-3xl text-white bg-[#b0525c] p-4 uppercase'>WELCOME TO</div>
-            <div className='text-xl text-[b0525c] bg-[#00283a] p-4 uppercase'>DOIT-TECH GLOBAL SERVICES</div>
-            <div className='text-xl text-white bg-[#b0525c] p-4 uppercase'>we offer IT solution and subscriptions</div>
+        <div className='absolute top-[-15%] left-[22%]  '>
+          <SmsAnime/>
         </div>
-        {/* <div className='flex'>
-            <div>Buy Data</div>
-            <div>Buy cable subscription</div>
-            <div>Buy Airtime</div>
-            <div>Pay electricity bill</div>
-            <div>Buy exam pins</div>
-
-        </div> */}
-
-     <div className='block mt-8 md:mt-2 w-[500px] h-[200px] bg-[#00283a] lg:absolute right-20 top-40 my-8 mx-auto'>
-        <div className='w-[500px] h-[200px] bg-[#00283a] my-8'>
-        <div className='flex flex-col justify-center items-center  text-black text-lg h-[150px] bg-[#b0525c]'>
-          <label  htmlFor="sub-select">Select your type of subscription:</label>
-            <select className='w-2/3 h-[50px] mx-8' name="sub" id="sub-select"  >
+        <div className='absolute bottom-[30%] left-[20%]   '>
+          <PhoneAnime />
+        </div>
+        <div className='absolute bottom-[30%] left-[8%]   '>
+          <Hand/>
+        </div>
+     </div>
+     <div className='flex mt-8 md:mt-2 w-full md:w-[500px] h-[200px] bg-[#00283a] lg:absolute right-20 top-40 my-8 mx-auto'>
+        <div className='w-full md:w-[500px] h-[200px] bg-[#00283a] my-8'>
+        <div className='flex flex-col justify-center items-center text-black  text-lg h-[150px] bg-[#00283a]'>
+          <label className='text-white '  htmlFor="sub-select">Select your type of subscription:</label>
+            <select className='w-2/3 h-[50px] mx-8 text-black' name="sub" id="sub-select"  >
               <option>--please choose an option</option>
               <option>Data</option>
               <option>cable</option>
@@ -39,6 +56,14 @@ const Welcome:React.FC = () => {
         </div>
         </div>
      </div>
+
+      </div>
+
+
+
+
+
+    
     </>
   )
 }
